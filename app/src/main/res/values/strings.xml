@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">ir-irm-impactradius-android-sdk</string>
     <string name="track_session">Track Session</string>
-    <string name="add_item">Add Item</string>
-    <string name="submit_items">Submit Items</string>
-    <string name="submit_conversion">Item Submit</string>
-    <string name="frame_name">Advertiser Framework</string>
-    <string name="activity_name">Test Application</string>
+    <string name="add_item">Add an item</string>
+    <string name="submit_items">Submit a event with 2 items</string>
+    <string name="submit_conversion">Submit all items added</string>
+    <string name="frame_name">Impact Radius Event Tracker</string>
+    <string name="activity_name">Demo App</string>
     <string name="log_detail">You can see various information in log</string>
 </resources>

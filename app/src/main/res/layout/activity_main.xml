@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@color/grey"
-    android:orientation="vertical">
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                android:orientation="vertical">
 
     <TextView
         android:id="@+id/framework"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
         android:gravity="center"
         android:text="@string/frame_name"
         android:textColor="@color/white"
@@ -42,40 +45,79 @@
         android:id="@+id/trackInstallButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/testapp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="19dp"
         android:text="@string/track_session"/>
 
     <Button
         android:id="@+id/bSubmitItems"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/trackInstallButton"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="66dp"
-        android:layout_marginLeft="41dp"
-        android:text="@string/submit_items"
-        tools:ignore="RtlHardcoded" />
+        android:layout_alignLeft="@+id/bAddItem"
+        android:layout_alignStart="@+id/bAddItem"
+        android:layout_below="@+id/bAddItem"
+        android:layout_marginTop="20dp"
+        android:text="@string/submit_conversion"
+        tools:ignore="RtlHardcoded"/>
 
     <Button
         android:id="@+id/bItemSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/trackInstallButton"
+        android:layout_alignStart="@+id/trackInstallButton"
         android:layout_below="@+id/trackInstallButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="73dp"
+        android:layout_marginTop="18dp"
         android:text="@string/submit_items"/>
 
     <Button
         android:id="@+id/bAddItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/bSubmitItems"
-        android:layout_alignBottom="@+id/bSubmitItems"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="58dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="21dp"
         android:text="@string/add_item"
-        tools:ignore="RtlHardcoded" />
+        tools:ignore="RtlHardcoded"/>
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bItemSubmit"
+        android:layout_alignStart="@+id/bItemSubmit"
+        android:layout_below="@+id/bItemSubmit"
+        android:layout_marginTop="24dp"
+        android:text="Customized event:"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bSubmitItems"
+        android:layout_alignStart="@+id/bSubmitItems"
+        android:layout_below="@+id/bSubmitItems"
+        android:layout_marginTop="13dp"
+        android:editable="false"
+        android:ems="10"
+        android:selectAllOnFocus="false"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bAddItem"
+        android:layout_alignBottom="@+id/bAddItem"
+        android:layout_toEndOf="@+id/trackInstallButton"
+        android:layout_toRightOf="@+id/trackInstallButton"
+        android:text="Delete all items"/>
+    s
 </RelativeLayout>
